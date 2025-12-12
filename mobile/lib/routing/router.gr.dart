@@ -1848,6 +1848,22 @@ class LibraryRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [SwipeReviewPage]
+class SwipeReviewRoute extends PageRouteInfo<void> {
+  const SwipeReviewRoute({List<PageRouteInfo>? children})
+    : super(SwipeReviewRoute.name, initialChildren: children);
+
+  static const String name = 'SwipeReviewRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SwipeReviewPage();
+    },
+  );
+}
+
+/// generated route for
 /// [LocalAlbumsPage]
 class LocalAlbumsRoute extends PageRouteInfo<void> {
   const LocalAlbumsRoute({List<PageRouteInfo>? children})
