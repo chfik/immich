@@ -4,6 +4,7 @@
   import ObtainiumConfigModal from '$lib/modals/ObtainiumConfigModal.svelte';
   import { Icon, modalManager } from '@immich/ui';
   import {
+    mdiArrowRightBoldCircleOutline,
     mdiCellphoneArrowDownVariant,
     mdiContentDuplicate,
     mdiCrosshairsGps,
@@ -13,6 +14,7 @@
   import { t } from 'svelte-i18n';
 
   const links = [
+    { href: AppRoute.QUICK_REVIEW, icon: mdiArrowRightBoldCircleOutline, label: $t('review_swipe_action') },
     { href: AppRoute.DUPLICATES, icon: mdiContentDuplicate, label: $t('review_duplicates') },
     { href: AppRoute.LARGE_FILES, icon: mdiImageSizeSelectLarge, label: $t('review_large_files') },
     { href: AppRoute.GEOLOCATION, icon: mdiCrosshairsGps, label: $t('manage_geolocation') },

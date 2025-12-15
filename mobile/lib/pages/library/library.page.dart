@@ -135,6 +135,18 @@ class QuickAccessButtons extends ConsumerWidget {
             onTap: () => context.pushRoute(const LockedRoute()),
           ),
           ListTile(
+            leading: const Icon(Icons.swipe_right_alt_rounded, size: 26),
+            title: Text(
+              'review_swipe_action'.tr(),
+              style: context.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w500),
+            ),
+            subtitle: Text(
+              'review_swipe_description'.tr(),
+              style: context.textTheme.bodySmall,
+            ),
+            onTap: () => context.pushRoute(const SwipeReviewRoute()),
+          ),
+          ListTile(
             leading: const Icon(Icons.group_outlined, size: 26),
             title: Text(
               IntlKeys.partners.tr(),
